@@ -5,5 +5,5 @@
 n = int(input("Введите число: "))
 a = 2
 while n % a != 0:
-    a +=1
+    a += 1
 print("Простое" if n == a else "Составное")
