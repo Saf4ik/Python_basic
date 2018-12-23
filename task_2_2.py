@@ -3,15 +3,19 @@
 """
 
 
-A = [1, 2, 3, 4, 5, 6, 7, 8]
-B = [2, 6, 1, 7]
-C = []
-print(A)
-print(B)
-for i in A:
-    if i not in B:
-        C.append(i)
-A = C
-print("Убираем элементы из первого списка")
-print(A)
-print(B)
+# A = [1, 2, 3, 4, 5, 6, 7, 8]
+# B = [2, 6, 1, 7]
+# C = []
+# print(A)
+# print(B)
+# for i in A:
+#    if i not in B:
+#        C.append(i)
+# A = C
+# print("Убираем элементы из первого списка")
+# print(A)
+# print(B)
+
+
+# решение с помощью функции set()
+print(set(A) - set(B))
