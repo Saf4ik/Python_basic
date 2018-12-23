@@ -8,9 +8,21 @@ from math import sqrt
 
 A = [2, -5, 8, 9, -25, 25, 4]
 B = []
+# for i in A:
+#     if i >= 0:
+#         q = sqrt(i)
+#         if int(q) == q:
+#             B.append(int(q))
+
+
 for i in A:
-    if i >= 0:
-        q = sqrt(i)
-        if int(q) == q:
-            B.append(int(q))
+    if i > 0 and (i**0.5) % 1 == 0:
+        B.append(int(i**0.5))
+
+
+
+
+
+
+
 print(B)
