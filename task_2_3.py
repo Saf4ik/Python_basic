@@ -11,3 +11,4 @@ for i in range(len(A)):
     else:
         B.append(i * 2)
 print(B)
+
