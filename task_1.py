@@ -5,14 +5,21 @@
 # Для решения задачи не используйте встроенные функции и функции из модуля math.
 
 
+# def my_round(number, ndigits):
+#     number = number * (10 ** ndigits)
+#     if float(number) - int(number) > 0.5:
+#         number = number // 1 + 1
+#     else:
+#         number = number // 1
+#     number = number / (10 ** ndigits)
+#     return number
+
+
 def my_round(number, ndigits):
-    number = number * (10 ** ndigits)
-    if float(number) - int(number) > 0.5:
-        number = number // 1 + 1
-    else:
-        number = number // 1
-    number = number / (10 ** ndigits)
-    return number
+    number = number * (10 ** ndigits) + 0.5
+    number = number // 1
+    return number / (10 ** ndigits)
+
 
 
 print(my_round(2.1234567, 5))
