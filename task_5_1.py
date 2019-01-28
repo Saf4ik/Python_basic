@@ -16,4 +16,3 @@ for i in range(9):
     if os.path.exists('dir_{}'.format(i+1)):
         os.remove('dir_{}'.format(i+1))
 print(os.listdir())
-
